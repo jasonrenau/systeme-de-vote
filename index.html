@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="./app.js"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <h1>Système de vote</h1>
+    <h2>Liste des candidats</h2>
+    <div class="container">
+      <div class="candidate">
+        <h2 class="name">Candidat 1</h2>
 
-<body>
-  <h1>Système de vote</h1>
-  <h2>Liste des candidats</h2>
-  <div class="container">
-    <div class="candidate">
-      <h2 class="name">Candidat 1</h2>
-      <button class="vote-btn">Vote</button>
-      <p><span class="vote-count">0</span>votes</p>
+        <p><span class="vote-count">0 </span>Votes</p>
+        <button class="vote-btn">Vote</button>
+      </div>
+      <div class="candidate">
+        <h2 class="name">Candidat 1</h2>
+
+        <p><span class="vote-count">0 </span>Votes</p>
+        <button class="vote-btn">Vote</button>
+      </div>
+      <div class="candidate">
+        <h2 class="name">Candidat 3</h2>
+
+        <p><span class="vote-count">0 </span>Votes</p>
+        <button class="vote-btn">Vote</button>
+      </div>
     </div>
-    <div class="candidate">
-      <h2 class="name">Candidat 1</h2>
-      <button class="vote-btn">Vote</button>
-      <p><span class="vote-count">0</span>votes</p>
+    <div>
+      <button
+        type="button
+    "
+        class="reset"
+      >
+        Reset
+      </button>
     </div>
-    <div class="candidate">
-      <h2 class="name">Candidat 3</h2>
-      <button class="vote-btn">Vote</button>
-      <p><span class="vote-count">0</span>votes</p>
-    </div>
-  </div>
-  <div>
-    <button type="button
-    " class="reset">Reset</button>
-  </div>
-
-</body>
-
+  </body>
 </html>
