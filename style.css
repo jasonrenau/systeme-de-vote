@@ -6,33 +6,40 @@
 
 body {
   text-align: center;
-  background-color: rgb(248, 246, 244);
+  background-color: rgb(230, 229, 229);
+  margin: 0 auto;
+  width: 85vw;
+  max-width: 1200px;
 }
 
 .container {
-  display: flex;
   gap: 2rem;
-  align-items: center;
-  flex-direction: column;
-  margin-block: 2rem;
-}
-h1,
-h2 {
-  font-family: 'Raleway', sans-serif;
-
-  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  max-width: 800px;
+  margin: 0 auto;
 }
 h1 {
+  font-family: 'Raleway', sans-serif;
+}
+h2 {
+  font-family: 'Raleway', sans-serif;
+  margin: 2rem;
+}
+
+.underline {
+  border: 2px solid rgb(73, 73, 209);
+  width: 10rem;
+  margin: 0 auto;
   margin-bottom: 5rem;
 }
 .candidate {
   border: 1px solid white;
   background-color: white;
-  width: 90%;
   margin-bottom: 5px;
-  height: 9rem;
-  max-width: 25rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.226);
+  display: grid;
+  text-align: center;
 }
 .name,
 .vote-count .vote-btn {
@@ -48,12 +55,18 @@ p {
   padding: 5px 10px;
   border-style: none;
   color: white;
+  width: fit-content;
+  margin: 0 auto;
+}
+.vote-count {
+  margin-inline: 3px;
 }
 .reset {
   border-radius: 10%;
   padding: 5px 10px;
   border: 1px solid rgb(48, 111, 230);
   color: rgb(48, 111, 230);
+  margin-top: 2rem;
 }
 
 /** Hoover */
@@ -68,16 +81,4 @@ p {
   background-color: rgb(31, 85, 185);
   transition: 0.5s;
   cursor: pointer;
-}
-
-@media screen and (min-width: 850px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 2rem;
-    width: 40rem;
-    max-width: 60rem;
-    justify-content: center;
-    flex-direction: row;
-  }
 }
