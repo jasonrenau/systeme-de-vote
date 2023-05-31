@@ -6,11 +6,78 @@
 
 body {
   text-align: center;
+  background-color: rgb(248, 246, 244);
 }
 
 .container {
   display: flex;
   gap: 2rem;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-block: 2rem;
+}
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+
+  margin-top: 1rem;
+}
+h1 {
+  margin-bottom: 5rem;
+}
+.candidate {
+  border: 1px solid white;
+  background-color: white;
+  width: 90%;
+  margin-bottom: 5px;
+  height: 9rem;
+  max-width: 25rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.226);
+}
+.name,
+.vote-count .vote-btn {
+  margin-bottom: 1rem;
+  display: block;
+}
+p {
+  margin: 1rem;
+}
+.vote-btn {
+  background-color: rgb(48, 111, 230);
+  border-radius: 10%;
+  padding: 5px 10px;
+  border-style: none;
+  color: white;
+}
+.reset {
+  border-radius: 10%;
+  padding: 5px 10px;
+  border: 1px solid rgb(48, 111, 230);
+  color: rgb(48, 111, 230);
+}
+
+/** Hoover */
+
+.reset:hover {
+  background-color: rgb(48, 111, 230);
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.vote-btn:hover {
+  background-color: rgb(31, 85, 185);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 850px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+    width: 40rem;
+    max-width: 60rem;
+    justify-content: center;
+    flex-direction: row;
+  }
 }
